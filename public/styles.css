@@ -81,7 +81,7 @@ button{
   letter-spacing: 2px;
 }
 .error{
-  color: #ff0099;
+  color: red;
   margin: 10px 2px;
   font-size: 0.8em;
   font-weight: bold;
