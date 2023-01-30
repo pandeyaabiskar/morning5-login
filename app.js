@@ -24,5 +24,5 @@ mongoose.connect(process.env.DBURI, { useNewUrlParser: true, useUnifiedTopology:
 
 // routes
 app.get('/', (req, res) => res.render('home'));
-app.get('/burgers', requireAuth, (req, res) => res.render('burgers'));
+app.get('/burgers', requireAuth, requireAdmin, (req, res) => res.render('burgers'));
 app.use(authRoutes)
